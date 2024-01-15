@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+}
+header .nav-menu{
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    background: black;
+    border-bottom: 1px solid red;
+    justify-content: space-between;
+    position: fixed;
+    position: relative;
+    z-index: 1;
+}
+header .animated-text{        
+    padding: 10px 20px;          
+    font-size: 24px;    
+    display: flex;
+}
+header h1 a{
+    text-decoration: none;
+    color: WHITE;
+    font-size: 28px;
+}
+header span{   
+   font-weight: 700;
+}
+@keyframes colorChange {
+    0% { color: white; }
+    25% { color: red; }
+    50% { color: orange; }
+    75% { color: yellow; }
+    100% { color: black; }
+}
+
+.animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.animated-letter {
+    display: inline-block;
+    animation: colorChange 5s infinite;
+}
+header ul{
+    display: flex;    
+    list-style: none;
+    margin: 0 20px;
+}
+header ul li{
+    margin: 0 10px;
+}
+header ul li a{    
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;    
+}
+header ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+section.first{
+    height: 100vh;
+    width: 100%;
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;     
+    position: relative;
+    z-index: 1;
+}
+section img{
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;    
+}
+section video{
+    position: absolute;
+    width: 100%;    
+    height: 100vh;        
+    object-fit: cover;
+    
+}
+section .text-one{        
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    margin: auto 20px;    
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.text-one h1{
+    color: red;
+    font-size: 3rem;       
+    font-weight: 700;     
+    text-shadow: 2px 2px 3px white;    
+}
+.text-one h2{
+    font-size: 3rem;
+    padding: 12px 0;
+}
+.text-one h4{
+    font-size: 18px;
+}
+.text-one a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 19px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid black;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    border-top: 2px solid red;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-around;        
+    font-size: 12px;    
+}
+div.redes img{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;        
+    margin: 0 12px;
+}
+footer .num{
+    display: none;
+    font-size: 18px;    
+}
+/*ABOUT*/
+
+/*Inicio Meus Projeto*/
+section .noflex{
+    color: white;
+    display: flex;
+    padding: 10px;
+    z-index: 1;
+}
+section div.flex{    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    z-index: 1;    
+    padding: 18px 23px;
+    max-width: 1000px;
+}
+section div.box{
+    flex-grow: 6;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    background: black;
+    border: 1px solid red;        
+    margin: 20px;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+section div.box:hover{
+    width: 220px;
+    height: 220px;
+    transition: 0.6s;
+}
+/*CONTATOS*/
+.fgn img{
+    margin-top: 12px;
+    height: 400px;
+}
+div.msg{
+    display: flex;
+    flex-direction: column;    
+}
+.text-one p{
+    margin: 5px;
+}
+div.msg textarea{
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 100px;
+}
+div.msg button{
+    color: white;
+    margin: 13px auto;
+    background-color: rgb(19, 18, 18);
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 11px;
+    width: 100px;    
+}
+@media screen and (max-width: 960px){
+    section div.flex{      
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 736px){
+    
+    section.first{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;                          
+    }
+    section .text-one{        
+        margin-top: 28px;        
+    }
+    section video{
+        height: 100%;
+    }
+    footer p.num{
+        font-size: 10px;
+    }
+    section img{
+       margin-top: -150px;
+    }
+    
+    /*ABOUT*/
+    
+    /*PROJECTOS*/
+    section div.box{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        padding: 50px 0;
+    }
+}
